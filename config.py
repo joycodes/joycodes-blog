@@ -1,5 +1,8 @@
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 class Config:
     '''
     general configuration parent class
@@ -34,7 +37,10 @@ class DevConfig(Config):
         Config: The general configuration class with the the general configuration settings
     '''
     
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://joyce:root@localhost/joycodesblog'
+
     DEBUG = True
+
     
 config_options = {
     'development':DevConfig,
