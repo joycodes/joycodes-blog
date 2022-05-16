@@ -16,6 +16,7 @@ class Config:
     
     QUOTES_API_BASE_URL = 'http://quotes.stormconsultancy.co.uk/quotes.json'
     
+    
     SECRET_KEY = os.environ.get('SECRET_KEY')
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 class ProdConfig(Config):
