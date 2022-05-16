@@ -21,7 +21,7 @@ class Config:
 
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQALCHEMY_DATABASE_URI = 'postgresql+psycopg2://socruucrygsxud:b2958f9f725ee4618c6ce64d3f9bd2567137f6ba0e68de9684a6240d2cc1f275@ec2-3-229-11-55.compute-1.amazonaws.com:5432/depopniuuokdgm'
+    # SQALCHEMY_DATABASE_URI = 'postgresql+psycopg2://socruucrygsxud:b2958f9f725ee4618c6ce64d3f9bd2567137f6ba0e68de9684a6240d2cc1f275@ec2-3-229-11-55.compute-1.amazonaws.com:5432/depopniuuokdgm'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 class ProdConfig(Config):
     '''
