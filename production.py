@@ -16,6 +16,7 @@ manager.add_command('db', MigrateCommand)
 @manager.shell
 def add_shell_context():
     return {'db': db, 'User': User, 'Post': Post, 'Comment': Comment}
+    
 
 @manager.command
 def test():
