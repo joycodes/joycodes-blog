@@ -5,7 +5,7 @@ This is a personal blogging website where you can create and share your opinions
 > Joyce Nguttu
 
 ## Screenshot
-<img src="https://github.com/joycodes/joycodesblog/blob/master/app/static/assets/landing-page.png?raw=true" width="1000">
+![image](./app/static/landing-page.png)
 
 ## Requirements
 
