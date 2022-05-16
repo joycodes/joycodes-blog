@@ -5,7 +5,7 @@ This is a personal blogging website where you can create and share your opinions
 > Joyce Nguttu
 
 ## Screenshot
-![image](./app/static/landing-page.png)
+![image](./app/static/assets/landing-page2.png)
 
 ## Requirements
 
