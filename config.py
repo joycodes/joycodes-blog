@@ -13,7 +13,7 @@ class Config:
     QUOTES_API_BASE_URL = 'http://quotes.stormconsultancy.co.uk/quotes.json'
     
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgres+psycopg2://apkorittdnfgzp:b1ffa862052bfe1421c3e537a6f196405b12f46d102389fa6ee941187882916a@ec2-50-16-221-180.compute-1.amazonaws.com:5432/d91vs7aqj34kv6'
+    SQLALCHEMY_DATABASE_URI = 'postgres+psycopg2://joyce:root@localhost/joycodesblog'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 class ProdConfig(Config):
     '''
