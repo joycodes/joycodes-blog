@@ -1,8 +1,12 @@
 import os
+
 class Config:
     '''
     general configuration parent class
     '''
+    SQLALCHEMY_TRACK_MODIFICATIONS=True
+
+    
     #email configurations
     MAIL_SERVER ='smtp.googlemail.com'
     MAIL_PORT =587
