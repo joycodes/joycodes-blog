@@ -1,9 +1,8 @@
 from flask import render_template
-from . import main
-
+from . import main as main
 @main.app_errorhandler(404)
-def errors(error):
+def error_page(error):
     '''
-    Function to render the 404 error page
+    function to render the 404 error page
     '''
-    return render_template('main/errors.html'),404
+    return render_template('error.html'),404

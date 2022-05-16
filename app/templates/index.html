@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% from 'quotes_macros.html' import display_quotes %}
+{% block content %}
+<section class="bg-landing" style="background: linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.836)) ,url('https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg')center center no-repeat;
+                                  background-size: cover; ">
+<div class="outer">
+  <div class="container ">
+    <h2 class="text-bold text-white">
+      PERSONAL-BLOG
+    </h2>
+    <hr>
+    <h3 class="text-light text-white">
+      SHARE WHAT'S ON YOUR MIND <br>
+      INTERACT WITH THE COMMUNITY ONBOARD
+    </h3>
+    <div class="outer mt-3">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-2 ">
+            <a href="{{ url_for('auth.login') }}" class="btn btn-lg rounded btn-blue rnd"> LOGIN</a>
+          </div>
+          <div class="col-md-1">
+            <div class="outer">
+              <div class="container">
+                <h4 class="cyan-text text-center">
+                  or
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 ">
+            <a href="{{ url_for('auth.register') }}" class="btn btn-lg rounded btn-blue rnd"> REGISTER </a>
+          </div>
+          <div class="col-md-3">
+            <div class="outer">
+              <div class="container">
+                <h4 class="cyan-text text-center">If not a user</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </div>
+</div>
+</section>
+<section class="bg-center">
+  <div class="container mb-4">
+    <div class="outer mt-3">
+      <div class="text-center">
+        <h3 class="text-dark">
+          Random Quotes to Inspire you....
+        </h3>
+        <hr class="bg-dark">
+      </div>
+    </div>
+    <div class="outer">
+      <div class="row mt-2">
+        {{ display_quotes(quotes) }}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock content %}

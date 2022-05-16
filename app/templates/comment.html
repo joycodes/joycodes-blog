@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+
+{% from 'com_macros.html' import display_comments%}
+
+
+{% block content %}
+
+<div class="container outer mt-5">
+    <div class="jumbotron  bg-primary shadow-lg text-center mt-4">
+        <h2 class="text-bold text-center text-light ">Click the button below to comment</h2>
+        <button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#exampleModal">
+            Click to Comment
+          </button>
+    </div>
+
+    <div class="container p-5 text-center">
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form method="POST" >
+                    {{ form.hidden_tag() }}
+                <div class="modal-body bg-light">
+                    {{ form.comment(class_='form-control') }}                          
+                </div>
+                <div class="modal-footer ">
+                    {{ form.submit(class_='btn btn-primary btn-md') }}
+                </div>
+            </form>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="container">
+        <p>{{ display_comments(comments) }}</p>
+</div>
+   
+
+{% endblock%}

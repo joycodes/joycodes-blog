@@ -1,8 +1,8 @@
 # Joycodes-blog
-This is a personal blogging website where you can create and share your opinions and other users can read and comment on them. blog-x also has random quotes that inspire the users. 
+This is a personal blogging website where you can create and share your opinions and other users can read and comment on them. 
 
 ## Author
-> VJoyce Nguttu
+> Joyce Nguttu
 
 ## Requirements
 
@@ -27,6 +27,7 @@ After extracting the files,
 4. Running the application
 >``python3.8 manage.py server``
 5. Running tests
+ > ``python3 manage.py test.``
 
 
 ## Technologies used

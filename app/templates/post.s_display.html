@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+{% from 'posts_macros.html' import display_posts %}
+
+
+{% block content %}
+<div class="bg-centre mb-3">
+    <div class="outer mt-2">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="outer">
+                        <div class="container ">
+                            <div class="card bg-light darker-2 p-4">
+                                <form method="POST" >
+                                    {{ form.hidden_tag() }}
+                                    <div class="form-group">
+                                        {{ form.title.label }}
+                                        {{ form.title(class_='form-control') }}
+                                      </div>
+                                      <div class="form-group">
+                                        {{ form.post.label }}
+                                        {{ form.post(class_='form-control') }}
+                                      </div>
+                                      <div class="form-group">
+                                        {{ form.category.label }}
+                                        {{ form.category(class_='form-control') }}
+                                      </div>
+                                      {{ form.submit(class_='btn btn-primary btn-md') }}
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+ 
+                </div>
+                <div class="col-md-7">
+                    <div class="outer mt-3">
+                        <div class="container mt-2">
+                            <div>{{ display_posts(posts) }}</div>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
