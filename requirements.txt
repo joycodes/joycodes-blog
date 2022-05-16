@@ -32,7 +32,9 @@ pipenv==2022.5.2
 pkg_resources==0.0.0
 platformdirs==2.5.2
 psycopg2==2.9.3
+psycopg2-binary==2.9.3
 pycodestyle==2.8.0
+python-dotenv==0.20.0
 six==1.16.0
 SQLAlchemy==1.4.36
 toml==0.10.2
